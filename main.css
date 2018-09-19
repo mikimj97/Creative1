@@ -1,10 +1,16 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,700,900');
 body {
-  font: normal 16px comic sans ms;
+  font: normal 16px Raleway;
   text-align: center;
+  color: white;
+  background: url("http://longwallpapers.com/Desktop-Wallpaper/doge-wallpapers-photo-For-Desktop-Wallpaper.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 500px;
 }
 
 #tic-tac-toe {
-  cell-spacing: 0px;
   border-spacing: 0px;
   border-collapse: separate;
   margin: 30px auto;
@@ -15,7 +21,7 @@ body {
   height: 100px;
   width: 100px;
   text-align: center;
-  font: bold 60px comic sans ms;
+  font: bold 60px Raleway;
 }
 
 #tic-tac-toe tr:first-child td {
@@ -34,23 +40,28 @@ body {
   border-right: none;
 }
 
-#tic-tac-toe td.X {
-  color: #ED676B; 
-}
-
-#tic-tac-toe td.O {
-  color: #23916B;
-}
-
 #scoreboard .score {
   text-align: center;
   font-size: 30px
 }
 
 #scoreboard .score#player1 {
-  color: #ED676B;
+  color: blue;
+}
+
+button {
+  display: inline-block;
+  zoom: 1;
+  padding: 2px 8px;
+  margin: 0;
+  cursor: pointer;
+  border: 1px solid #bbb;
+  overflow: visible;
+  text-decoration: none;
+  white-space: nowrap;
+  font: normal 12px Raleway;
 }
 
 #scoreboard .score#player2 {
-  color: #23916B;
+  color: red;
 }

@@ -16,8 +16,8 @@ function TicTacToe(placeholder, grid_size, callback) {
 	};
 
 	this.marks = {
-		X: "1",  // Player 1 mark
-		O: "0",  // Player 2 mark
+		X: "0",  // Player 1 mark
+		O: "1",  // Player 2 mark
 		count: 0 // Number of moves made by player
 	};
 
@@ -204,7 +204,7 @@ function onResult(result, scores) {
 	if(result == 'draw') {
 		alert("It's a draw !");
 	} else {
-		alert(result + " has won");
+		alert("Player " + result + " has won");
 		updateScores(scores.X, scores.O);
 	}
 	tictactoe.empty();

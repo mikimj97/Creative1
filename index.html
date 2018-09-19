@@ -1,31 +1,30 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <title>Tic-Tac-Toe Game!</title>
         <link rel="stylesheet" href="main.css" type="text/css" />
     </head>
-    
-    <body>    
-
-        
+    <body>
         <table id="scoreboard" align="center">
-          <tr>
+          <tr>  
+            <td> Player 0 </td>
+            <td width="30"></td>
             <td> Player 1 </td>
-            <td width="30"> &nbsp; </td>
-            <td> Player 2 </td>
           </tr>
           <tr>
             <td class="score" id="player1">
               0 
             </td>
-            <td> &nbsp; </td>
+            <td></td>
             <td class="score" id="player2">
               0 
             </td>
           </tr>
         </table>
+      </div>
         
         
-        <div id="placeholder"></div>
+        <div id="placeholder"></div> <!--Creates the Tic Tac Toe board-->
         
         
         <button onclick="restart()">
@@ -38,14 +37,6 @@
           <option value="3" selected="">
             3 X 3
           </option>
-          <option value="4">
-            4 X 4
-          </option>
-          <option value="5">
-            5 X 5
-          </option>
-          <option value="6">
-            6 X 6
           </option>
         </select>
 
