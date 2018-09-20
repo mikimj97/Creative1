@@ -112,7 +112,6 @@ TicTacToe.prototype.mark = function(column) {
 // If mark is present in all columns of any combinations then user won
 //
 // Instead of going through each combination manually we can make use of loops,
-// So that it can be used for any grids like 7 X 7
 //
 
 TicTacToe.prototype.didWin = function(mark) {
